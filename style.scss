@@ -1,3 +1,29 @@
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url("https://fonts.googleapis.com/css?family=Karla|Montserrat");
+
 body {
-	margin: 0;
+}
+
+h1,
+h2,
+h3 {
+	font-family: "Montserrat";
+}
+
+.row {
+}
+
+.col-lg-6 {
+	max-width: 50%;
+}
+
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.lead {
+	max-width: 50%;
 }

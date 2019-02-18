@@ -9,61 +9,85 @@
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
 		/>
 
-		<!-- Bootstrap CSS -->
-		<link
-			rel="stylesheet"
-			href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-			integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-			crossorigin="anonymous"
-		/>
+		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<section id="nav">
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="#">
+				<img
+					src="/docs/4.0/assets/brand/bootstrap-solid.svg"
+					width="30"
+					height="30"
+					class="d-inline-block align-top"
+					alt=""
+				/>
+				Spoon Healthcare
+			</a>
+		</nav>
+		<section id="welcome">
 			<div class="container">
-				<div class="row">
-					<div class="col">Hello</div>
-					<div class="col">World</div>
-				</div>
-			</div>
-		</section>
-		<section id="vp">
-			<div class="container">
-				<div class="row">
-					<div class="col">
-						<h1>Hello</h1>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit.
-							Exercitationem natus non hic deserunt quidem animi fuga! Aliquam
-							hic suscipit esse quas alias consequatur maiores itaque
-							repudiandae. Ab rerum nisi quod!
-						</p>
-						<div class="ipb">
-							<input type="text" />
-							<button>Submit</button>
+				<div class="row ">
+					<div class="col-lg-7">
+						<div class="content">
+							<div class="welcome-text mt-auto">
+								<h1 class="">Spoon Healthcare</h1>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit.
+									Exercitationem natus non hic deserunt quidem animi fuga!
+									Aliquam hic suscipit esse quas alias consequatur maiores
+									itaque repudiandae. Ab rerum nisi quod!
+								</p>
+								<input type="text" />
+								<button>Submit</button>
+							</div>
 						</div>
 					</div>
-					<div class="col">World</div>
+					<div class="col-lg-5">
+						<img src="https://fakeimg.pl/350x200/ff0000,128/000,255" />
+					</div>
 				</div>
 			</div>
 		</section>
 		<section id="manifesto">
 			<div class="container">
 				<div class="row">
-					<h2>
+					<h2 class="mx-auto">
 						Manifesto
 					</h2>
-					<div class="row">
+				</div>
+				<div class="row">
+					<h3 class="mx-auto">Nous croyons en</h3>
+				</div>
+				<div class="row">
+					<p class="mx-auto">
+						La santé pour tous, la technologie pour aider
+					</p>
+				</div>
+				<div class="row">
+					<div class="col">
 						<div class="col">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
-							harum minus exercitationem dolorum! Quidem laudantium voluptatem
-							quibusdam maiores veritatis illum, repellendus ipsa nobis nesciunt
-							dignissimos sapiente non quis, optio sed!
+							<img src="https://fakeimg.pl/60x60/ff0000,128/000,255" />
 						</div>
 						<div class="col">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
-							harum minus exercitationem dolorum! Quidem laudantium voluptatem
-							quibusdam maiores veritatis illum, repellendus ipsa nobis nesciunt
-							dignissimos sapiente non quis, optio sed!
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+								harum minus exercitationem dolorum! Quidem laudantium voluptatem
+								quibusdam maiores veritatis illum, repellendus ipsa nobis
+								nesciunt dignissimos sapiente non quis, optio sed!
+							</p>
+						</div>
+					</div>
+					<div class="col">
+						<div class="col">
+							<img src="https://fakeimg.pl/60x60/ff0000,128/000,255" />
+						</div>
+						<div class="col">
+							<p>
+								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore
+								harum minus exercitationem dolorum! Quidem laudantium voluptatem
+								quibusdam maiores veritatis illum, repellendus ipsa nobis
+								nesciunt dignissimos sapiente non quis, optio sed!
+							</p>
 						</div>
 					</div>
 				</div>
@@ -72,19 +96,28 @@
 		<section id="doing">
 			<div class="container">
 				<div class="row">
-					<div class="col">
-						<img src="https://fakeimg.pl/250x100/" alt="" />
-					</div>
-					<div class="col">
-						<form action="" method="post">
-							<input type="text" />
-							<br />
-							<input type="text" />
-							<br />
-							<textarea name="" id="" cols="30" rows="10"></textarea>
-							<br />
-							<button>Submit</button>
-						</form>
+					<h2 class="mx-auto">Doing</h2>
+				</div>
+        <div class="row">
+          <h3 class="mx-auto">Lorem ipsum</h3>
+        </div>
+					<div class="row">
+						<div class="col">
+							<img src="https://fakeimg.pl/250x100/" alt="" />
+						</div>
+						<div class="col">
+              <h4>Titre lorem ipsum del</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+							<form action="" method="post">
+								<input type="text" placeholder="Nom"/>
+								<br />
+								<input type="text" placeholder="Email" />
+								<br />
+								<textarea name="" id="" cols="30" rows="10" placeholder="Votre message"></textarea>
+								<br />
+								<button>Envoyer</button>
+							</form>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -92,33 +125,39 @@
 		<section id="team">
 			<div class="container">
 				<div class="row">
-					<h2>Team</h2>
+					<h2 class="mx-auto">Team</h2>
 				</div>
+        <div class="row">
+          <h3 class="mx-auto">Titre lorem ipsum del</h3>
+        </div>
+        <div class="row">
+          <p class="mx-auto lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit asperiores expedita aliquam earum ea dolores ab inventore est. Adipisci, cumque consequuntur? Porro modi atque praesentium facilis quibusdam, libero quae cumque!</p>
+        </div>
 				<div class="row">
 					<div class="card-deck">
 						<div class="card">
-							<img class="card-img-top" src="holder.js/100x180/" alt="" />
+							<img src="https://fakeimg.pl/250x100/" class="img-" alt="" />
 							<div class="card-body">
 								<h4 class="card-title">Title</h4>
 								<p class="card-text">Text</p>
 							</div>
 						</div>
 						<div class="card">
-							<img class="card-img-top" src="holder.js/100x180/" alt="" />
+							<img src="https://fakeimg.pl/250x100/" class="img-" alt="" />
 							<div class="card-body">
 								<h4 class="card-title">Title</h4>
 								<p class="card-text">Text</p>
 							</div>
 						</div>
 						<div class="card">
-							<img class="card-img-top" src="holder.js/100x180/" alt="" />
+							<img src="https://fakeimg.pl/250x100/" class="img-" alt="" />
 							<div class="card-body">
 								<h4 class="card-title">Title</h4>
 								<p class="card-text">Text</p>
 							</div>
 						</div>
 						<div class="card">
-							<img class="card-img-top" src="holder.js/100x180/" alt="" />
+							<img src="https://fakeimg.pl/250x100/" class="img-" alt="" />
 							<div class="card-body">
 								<h4 class="card-title">Title</h4>
 								<p class="card-text">Text</p>
@@ -131,54 +170,69 @@
 		<section id="news">
 			<div class="container">
 				<div class="row">
-					<h2>News</h2>
+					<h2 class="mx-auto">News</h2>
 				</div>
+        <div class="row">
+          <h3 class="mx-auto">
+            Titre lorem ipsum del
+          </h3>
+        </div>
+        <div class="row">
+          <p class="mx-auto lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia non aperiam possimus impedit voluptatibus, unde quod ullam voluptate temporibus cupiditate, obcaecati debitis rem. Eum, tenetur. Itaque doloribus numquam dignissimos labore?</p>
+        </div>
 				<div class="row">
 					<div class="card-deck">
-						<div class="card">
-							<img class="card-img-top" src="holder.js/100x180/" alt="" />
-							<div class="card-body">
-								<h4 class="card-title">Title</h4>
-								<p class="card-text">Text</p>
-							</div>
-						</div>
-						<div class="card">
-							<img class="card-img-top" src="holder.js/100x180/" alt="" />
-							<div class="card-body">
-								<h4 class="card-title">Title</h4>
-								<p class="card-text">Text</p>
-							</div>
-						</div>
-						<div class="card">
-							<img class="card-img-top" src="holder.js/100x180/" alt="" />
-							<div class="card-body">
-								<h4 class="card-title">Title</h4>
-								<p class="card-text">Text</p>
-							</div>
-						</div>
-						<div class="card">
-							<img class="card-img-top" src="holder.js/100x180/" alt="" />
-							<div class="card-body">
-								<h4 class="card-title">Title</h4>
-								<p class="card-text">Text</p>
-							</div>
-						</div>
+            <div class="card">
+              <img src="https://fakeimg.pl/250x100/" class="img-" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text</p>
+              </div>
+            </div><div class="card">
+              <img src="https://fakeimg.pl/250x100/" class="img-" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text</p>
+              </div>
+            </div><div class="card">
+              <img src="https://fakeimg.pl/250x100/" class="img-" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text</p>
+              </div>
+            </div><div class="card">
+              <img src="https://fakeimg.pl/250x100/" class="img-" alt="" />
+              <div class="card-body">
+                <h4 class="card-title">Title</h4>
+                <p class="card-text">Text</p>
+              </div>
+            </div>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="help">
 			<div class="container">
+        <div class="row">
+					<h2 class="mx-auto">Help us</h2>
+        </div>
+        <div class="row">
+          <h3 class="mx-auto">
+            Titre lorem
+          </h3>
+        </div>
 				<div class="row">
-					<h2>Help us</h2>
 					<div class="col">
 						<img src="https://fakeimg.pl/250x100/" alt="" />
-					</div>
+            <div class="h4">Argent</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et ad fugit qui numquam, velit odit, tenetur ex quisquam enim minima optio at reprehenderit animi consequuntur doloribus. Iste aliquam quos doloremque?</p>
+            <button>En savoir plus</button>
+          </div>
 					<div class="col">
 						<form action="" method="post">
-							<input type="text" />
+							<input type="text" placeholder="Nom"/>
 							<br />
-							<input type="text" />
+							<input type="text" placeholder="Email" />
 							<br />
 							<textarea name="" id="" cols="30" rows="10"></textarea>
 							<br />
@@ -191,12 +245,19 @@
 		<section id="ecosystem">
 			<div class="container">
 				<div class="row">
-					<h2>Ecosystem</h2>
+					<h2 class="mx-auto">Ecosystem</h2>
 				</div>
+        <div class="row">
+          <h3 class="mx-auto">
+            Titre lorem ipsum
+          </h3>
+        </div>
 				<div class="row">
+          <!-- @TODO SLIDER -->
 					<img src="https://fakeimg.pl/250x100/" alt="" />
 					<img src="https://fakeimg.pl/250x100/" alt="" />
 					<img src="https://fakeimg.pl/250x100/" alt="" />
+          <!-- /@TODO SLIDER -->
 				</div>
 			</div>
 		</section>
@@ -204,7 +265,7 @@
 			<div class="container-fluid">
 				<iframe
 					src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11316.1827337434!2d-0.586137!3d44.841003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7d5b375d92925118!2sDigital+Village+Bordeaux!5e0!3m2!1sfr!2sfr!4v1550298683221"
-					width="1200"
+					width="100%"
 					height="450"
 					frameborder="0"
 					style="border:0"
