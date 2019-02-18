@@ -9727,8 +9727,14 @@ h3 {
   }
 }
 
-#welcome {
+#welcome .content {
   height: 95vh;
+}
+#welcome .welcome-text,
+#welcome .welcome-splash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 h1,
