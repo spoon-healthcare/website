@@ -9656,6 +9656,81 @@ h3 {
     border-color: #dee2e6;
   }
 }
+@media (min-width: 768px) {
+  body {
+    background-color: #ff6666;
+  }
+  body section::after {
+    content: "LG";
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border: 3px dashed blue;
+    border-bottom-right-radius: 30px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 1199.98px) {
+  body {
+    background-color: #ffb266;
+  }
+  body section::after {
+    content: "MD";
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border: 3px dashed chartreuse;
+    border-bottom-right-radius: 30px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 991.98px) {
+  body {
+    background-color: #ffff66;
+  }
+  body section::after {
+    content: "SM";
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border: 3px dashed aquamarine;
+    border-bottom-right-radius: 30px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 767.98px) {
+  body {
+    background-color: #b2ff66;
+  }
+  body section::after {
+    content: "XS";
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border: 3px dashed rebeccapurple;
+    border-bottom-right-radius: 30px;
+    font-size: 36px;
+  }
+}
+@media (max-width: 575.98px) {
+  body {
+    background-color: #b2b266;
+  }
+  body section::after {
+    content: "XXS";
+    position: fixed;
+    top: 0;
+    background-color: white;
+    border: 3px dashed darkmagenta;
+    border-bottom-right-radius: 30px;
+    font-size: 36px;
+  }
+}
+
+#welcome {
+  height: 95vh;
+}
+
 h1,
 h2,
 h3 {
