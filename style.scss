@@ -65,6 +65,12 @@ body {
 	}
 }
 
+h1,
+h2,
+h3 {
+	font-family: "Montserrat";
+}
+
 #welcome {
 	.content {
 		height: 95vh;
@@ -77,17 +83,49 @@ body {
 	}
 }
 
-h1,
-h2,
-h3 {
-	font-family: "Montserrat";
+#manifesto {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	.manifesto-card {
+		display: inline-flex;
+	}
 }
 
-.row {
+#doing {
+	height: 100vh;
+	display: flex;
+	align-items: center;
 }
 
-.col-lg-6 {
-	max-width: 50%;
+#team {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+#news {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+#help {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+#ecosystem {
+	height: 50vh;
+	display: flex;
+	align-items: center;
+}
+
+#footer {
+	height: 30vh;
+	display: flex;
+	align-items: center;
 }
 
 .content {
