@@ -8,8 +8,9 @@ Site web de l'association Spoon Healthcare
 
 #### Compiler le css
 
-$ npm i 
-$ sass style.scss style.css --watch
+\$ npm i
+
+\$ sass style.scss style.css --watch
 
 #### Intégration
 
