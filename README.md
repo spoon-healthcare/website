@@ -14,7 +14,20 @@ Site web de l'association Spoon Healthcare
 
 #### Intégration
 
-Vous trouverez la maquette dans maquette.xd
-Si vous n'avez pas la suite Adobe, utilisez photopea.com pour récupérer les assets
-Créer une branche
-Une branche - un intégrateur - une section
+\Vous trouverez la maquette à la racine
+
+\Tous les assets sont exportés (.svg & .png)
+
+\Merci de les renommer "proprement"
+
+\Si vous n'avez pas la suite Adobe, utilisez photopea.com pour récupérer les assets
+
+#### Collaboration
+
+\ Créer une branche
+
+\ Choisir une section par branche
+
+\ Nomenclature : {{prénom+nom}} - {{section}}
+
+\ Effectuer une merge request
