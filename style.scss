@@ -1,76 +1,97 @@
 @import "node_modules/bootstrap/scss/bootstrap.scss";
-
 @import url("https://fonts.googleapis.com/css?family=Karla|Montserrat");
 
-body {
-	@include media-breakpoint-up(md) {
-		background-color: #ff6666;
-		section::after {
-			content: "LG";
-			position: fixed;
-			top: 0;
-			background-color: white;
-			border: 3px dashed blue;
-			border-bottom-right-radius: 30px;
-			font-size: 36px;
-		}
-	}
-	@include media-breakpoint-down(lg) {
-		background-color: #ffb266;
-		section::after {
-			content: "MD";
-			position: fixed;
-			top: 0;
-			background-color: white;
-			border: 3px dashed chartreuse;
-			border-bottom-right-radius: 30px;
-			font-size: 36px;
-		}
-	}
-	@include media-breakpoint-down(md) {
-		background-color: #ffff66;
-		section::after {
-			content: "SM";
-			position: fixed;
-			top: 0;
-			background-color: white;
-			border: 3px dashed aquamarine;
-			border-bottom-right-radius: 30px;
-			font-size: 36px;
-		}
-	}
-	@include media-breakpoint-down(sm) {
-		background-color: #b2ff66;
-		section::after {
-			content: "XS";
-			position: fixed;
-			top: 0;
-			background-color: white;
-			border: 3px dashed rebeccapurple;
-			border-bottom-right-radius: 30px;
-			font-size: 36px;
-		}
-	}
-	@include media-breakpoint-down(xs) {
-		background-color: #b2b266;
-		section::after {
-			content: "XXS";
-			position: fixed;
-			top: 0;
-			background-color: white;
-			border: 3px dashed darkmagenta;
-			border-bottom-right-radius: 30px;
-			font-size: 36px;
-		}
-	}
-}
+/* B4 OVERRIDDINGS */
 
+/* B4 BREAKPOINTS HELPER */
+// body {
+// 	@include media-breakpoint-up(md) {
+// 		background-color: #ff6666;
+// 		section::after {
+// 			content: "LG";
+// 			position: fixed;
+// 			top: 0;
+// 			background-color: white;
+// 			border: 3px dashed blue;
+// 			border-bottom-right-radius: 30px;
+// 			font-size: 36px;
+// 		}
+// 	}
+// 	@include media-breakpoint-down(lg) {
+// 		background-color: #ffb266;
+// 		section::after {
+// 			content: "MD";
+// 			position: fixed;
+// 			top: 0;
+// 			background-color: white;
+// 			border: 3px dashed chartreuse;
+// 			border-bottom-right-radius: 30px;
+// 			font-size: 36px;
+// 		}
+// 	}
+// 	@include media-breakpoint-down(md) {
+// 		background-color: #ffff66;
+// 		section::after {
+// 			content: "SM";
+// 			position: fixed;
+// 			top: 0;
+// 			background-color: white;
+// 			border: 3px dashed aquamarine;
+// 			border-bottom-right-radius: 30px;
+// 			font-size: 36px;
+// 		}
+// 	}
+// 	@include media-breakpoint-down(sm) {
+// 		background-color: #b2ff66;
+// 		section::after {
+// 			content: "XS";
+// 			position: fixed;
+// 			top: 0;
+// 			background-color: white;
+// 			border: 3px dashed rebeccapurple;
+// 			border-bottom-right-radius: 30px;
+// 			font-size: 36px;
+// 		}
+// 	}
+// 	@include media-breakpoint-down(xs) {
+// 		background-color: #b2b266;
+// 		section::after {
+// 			content: "XXS";
+// 			position: fixed;
+// 			top: 0;
+// 			background-color: white;
+// 			border: 3px dashed darkmagenta;
+// 			border-bottom-right-radius: 30px;
+// 			font-size: 36px;
+// 		}
+// 	}
+// }
+
+/* HEADINGS */
 h1,
 h2,
 h3 {
 	font-family: "Montserrat";
 }
 
+/* TEXT */
+p,
+a {
+	font-family: "Karla";
+}
+
+/* COMMONS */
+.content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.lead {
+	max-width: 50%;
+}
+
+/* WELCOME */
 #welcome {
 	.content {
 		height: 95vh;
@@ -83,6 +104,7 @@ h3 {
 	}
 }
 
+/* MANIFESTO */
 #manifesto {
 	height: 100vh;
 	display: flex;
@@ -92,48 +114,44 @@ h3 {
 	}
 }
 
+/* DOING */
 #doing {
 	height: 100vh;
 	display: flex;
 	align-items: center;
 }
 
+/* TEAM */
 #team {
 	height: 100vh;
 	display: flex;
 	align-items: center;
 }
 
+/* NEWS */
 #news {
 	height: 100vh;
 	display: flex;
 	align-items: center;
 }
 
+/* HELP */
 #help {
 	height: 100vh;
 	display: flex;
 	align-items: center;
 }
 
+/* ECOSYSTEM */
 #ecosystem {
 	height: 50vh;
 	display: flex;
 	align-items: center;
 }
 
+/* FOOTER */
 #footer {
 	height: 30vh;
 	display: flex;
 	align-items: center;
-}
-
-.content {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.lead {
-	max-width: 50%;
 }

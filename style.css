@@ -9656,83 +9656,33 @@ h3 {
     border-color: #dee2e6;
   }
 }
-@media (min-width: 768px) {
-  body {
-    background-color: #ff6666;
-  }
-  body section::after {
-    content: "LG";
-    position: fixed;
-    top: 0;
-    background-color: white;
-    border: 3px dashed blue;
-    border-bottom-right-radius: 30px;
-    font-size: 36px;
-  }
-}
-@media (max-width: 1199.98px) {
-  body {
-    background-color: #ffb266;
-  }
-  body section::after {
-    content: "MD";
-    position: fixed;
-    top: 0;
-    background-color: white;
-    border: 3px dashed chartreuse;
-    border-bottom-right-radius: 30px;
-    font-size: 36px;
-  }
-}
-@media (max-width: 991.98px) {
-  body {
-    background-color: #ffff66;
-  }
-  body section::after {
-    content: "SM";
-    position: fixed;
-    top: 0;
-    background-color: white;
-    border: 3px dashed aquamarine;
-    border-bottom-right-radius: 30px;
-    font-size: 36px;
-  }
-}
-@media (max-width: 767.98px) {
-  body {
-    background-color: #b2ff66;
-  }
-  body section::after {
-    content: "XS";
-    position: fixed;
-    top: 0;
-    background-color: white;
-    border: 3px dashed rebeccapurple;
-    border-bottom-right-radius: 30px;
-    font-size: 36px;
-  }
-}
-@media (max-width: 575.98px) {
-  body {
-    background-color: #b2b266;
-  }
-  body section::after {
-    content: "XXS";
-    position: fixed;
-    top: 0;
-    background-color: white;
-    border: 3px dashed darkmagenta;
-    border-bottom-right-radius: 30px;
-    font-size: 36px;
-  }
-}
-
+/* B4 OVERRIDDINGS */
+/* B4 BREAKPOINTS HELPER */
+/* HEADINGS */
 h1,
 h2,
 h3 {
   font-family: "Montserrat";
 }
 
+/* TEXT */
+p,
+a {
+  font-family: "Karla";
+}
+
+/* COMMONS */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lead {
+  max-width: 50%;
+}
+
+/* WELCOME */
 #welcome .content {
   height: 95vh;
 }
@@ -9743,6 +9693,7 @@ h3 {
   justify-content: center;
 }
 
+/* MANIFESTO */
 #manifesto {
   height: 100vh;
   display: flex;
@@ -9752,50 +9703,46 @@ h3 {
   display: inline-flex;
 }
 
+/* DOING */
 #doing {
   height: 100vh;
   display: flex;
   align-items: center;
 }
 
+/* TEAM */
 #team {
   height: 100vh;
   display: flex;
   align-items: center;
 }
 
+/* NEWS */
 #news {
   height: 100vh;
   display: flex;
   align-items: center;
 }
 
+/* HELP */
 #help {
   height: 100vh;
   display: flex;
   align-items: center;
 }
 
+/* ECOSYSTEM */
 #ecosystem {
   height: 50vh;
   display: flex;
   align-items: center;
 }
 
+/* FOOTER */
 #footer {
   height: 30vh;
   display: flex;
   align-items: center;
-}
-
-.content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.lead {
-  max-width: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
