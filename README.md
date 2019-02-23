@@ -1,12 +1,18 @@
-#Spoon Healthcare
-##Website
+# Spoon Healthcare
 
-###Modus operandi
-####Compiler le css
+## Website
+
+Site web de l'association Spoon Healthcare
+
+### Modus operandi
+
+#### Compiler le css
+
 $ npm i 
 $ sass style.scss style.css --watch
 
-####Intégration
+#### Intégration
+
 Vous trouverez la maquette dans maquette.xd
 Si vous n'avez pas la suite Adobe, utilisez photopea.com pour récupérer les assets
 Créer une branche
