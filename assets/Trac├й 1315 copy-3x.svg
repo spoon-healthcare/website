@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 789 1197" width="789" height="1197">
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="M-980 -282L940 -282L940 7255L-980 7255Z" />
+		</clipPath>
+		<linearGradient id="grd1" gradientUnits="userSpaceOnUse"  x1="433.272" y1="0.881" x2="370.086" y2="1206.531">
+			<stop offset="0" stop-color="#1f9561"  />
+			<stop offset="1" stop-color="#6853ac"  />
+		</linearGradient>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: url(#grd1) } 
+	</style>
+	<g id="Home Page – 3 copy" clip-path="url(#cp1)">
+		<g id="blob-shape (7) copy" style="opacity: 0.941">
+			<path id="-e-Tracé 1315 copy" class="shp0" d="M521.87,17.01c-78.98,-46.5 -200.02,27.67 -247.04,127.95c-47.31,100.26 -20.59,226.63 -72.61,353.69c-52.34,127.34 -183.42,255.35 -199.76,401.1c-16.35,145.74 81.73,309.2 201.36,296.54c119.64,-12.96 303.21,-183.71 400.91,-293.95c97.72,-110.54 143.91,-208.02 143.91,-208.02c27.68,-41.04 49.06,-110.68 33.44,-162.27c-15.6,-51.89 -31.83,-133.11 -73.24,-237.12c-41.41,-104.01 -108,-231.11 -186.96,-277.9z" />
+		</g>
+	</g>
+</svg>
