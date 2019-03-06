@@ -69,6 +69,12 @@
 $grey: #434343;
 $mauve: #67549a;
 
+/* CORE */
+html,
+body {
+	background-color: #f8f8f8;
+}
+
 /* HEADINGS */
 h1,
 h2,
@@ -81,7 +87,7 @@ h1 {
 	color: $grey;
 	font-size: 70px;
 	font-weight: 300;
-	max-width: 200px;
+	max-width: 100px;
 	padding-bottom: 75px;
 	border-bottom: 5px solid $mauve;
 }
@@ -117,15 +123,22 @@ h4 {
 /* TEXT */
 p,
 a,
-label {
+label,
+input {
 	color: $grey;
 	font-family: "Karla";
 	font-size: 22px;
-	font-weight: 400px;
+	font-weight: 400;
 	line-height: 30px;
 }
 
 /* COMMONS */
+
+input:focus,
+button:focus {
+	outline: none;
+}
+
 .content {
 	display: flex;
 	align-items: center;
@@ -143,11 +156,34 @@ label {
 }
 
 .white-button {
-	width: 185px;
+	width: 100%;
 	height: 45px;
 	border: 1px solid #67549a;
 	background-color: white;
 	border-radius: 24px;
+	&:hover {
+		background-color: $mauve;
+		color: white;
+	}
+}
+
+.mc-field-group {
+	display: flex;
+
+	/*INPUT*/
+	.email {
+		border-radius: 120px;
+		min-width: 400px;
+		background-color: white;
+		border: 1px solid $mauve;
+	}
+	/*BUTTON*/
+	.button {
+		z-index: 1;
+		margin-left: -3rem;
+		border-radius: 120px;
+		border: 1px solid $mauve;
+	}
 }
 
 /* WELCOME */
@@ -166,7 +202,9 @@ label {
 		p {
 			padding-right: 50px;
 			padding-top: 50px;
-			font-size: 18px;
+			font-size: 22px;
+			font-weight: 700;
+			text-justify: auto;
 		}
 	}
 }
@@ -176,8 +214,25 @@ label {
 	height: 100vh;
 	display: flex;
 	align-items: center;
+
+	/* DROPS */
+	.drop-1 {
+		position: absolute;
+		left: 250px;
+		filter: opacity(0.5);
+	}
+	.drop-2 {
+		position: absolute;
+		right: 150px;
+		filter: opacity(0.5);
+	}
 	.manifesto-card {
-		display: inline-flex;
+		display: flex;
+		flex-direction: column;
+		padding: 2rem 3rem 5rem 3rem;
+		height: 300px;
+		background-color: white;
+		box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
 	}
 }
 
@@ -186,6 +241,16 @@ label {
 	height: 100vh;
 	display: flex;
 	align-items: center;
+	h2,
+	h3 {
+		z-index: 1;
+	}
+	/* DROPS */
+	.drop-1 {
+		position: absolute;
+		right: 0px;
+		filter: opacity(0.3);
+	}
 }
 
 /* TEAM */
@@ -193,8 +258,28 @@ label {
 	height: 100vh;
 	display: flex;
 	align-items: center;
+	h2,
+	h3,
+	p {
+		z-index: 1;
+	}
+
+	.drop-1 {
+		position: absolute;
+		left: 100px;
+		filter: opacity(0.6);
+	}
+
 	.card {
 		margin: 0 2vw;
+		box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
+		.card-body {
+			padding: 2rem;
+			button {
+				height: 32px;
+				font-size: 16px;
+			}
+		}
 	}
 	.img-card {
 		max-height: 300px;
@@ -207,10 +292,33 @@ label {
 	display: flex;
 	align-items: center;
 	.card {
+		box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
 		&:hover {
-			color: white;
+			* {
+				color: white;
+			}
+			transition: transform 0.075s;
+			transform: scale(1.03);
+			button {
+				color: $mauve;
+				&:hover {
+					color: $white;
+				}
+			}
 			background-image: linear-gradient(-237.25deg, #6853ac 0%, #1f9561 100%);
 		}
+	}
+
+	.frame {
+		margin: 0 auto;
+		height: 300px;
+		width: 300px;
+		display: flex;
+	}
+
+	.img-card {
+		width: auto;
+		margin: auto;
 	}
 }
 
@@ -219,10 +327,25 @@ label {
 	height: 100vh;
 	display: flex;
 	align-items: center;
+
+	.help-card {
+		background-color: white;
+		padding: 2rem 3rem 1rem 3rem;
+		border-radius: 12px;
+		box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
+	}
+
+	/* DROPS */
+	.drop-1 {
+		position: absolute;
+		left: 0px;
+		filter: opacity(0.4);
+	}
 }
 
 /* ECOSYSTEM */
 #ecosystem {
+	margin: 100px 0px;
 	height: 50vh;
 	display: flex;
 	align-items: center;

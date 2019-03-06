@@ -9658,6 +9658,12 @@ h3 {
 }
 /* B4 OVERRIDDINGS */
 /* B4 BREAKPOINTS HELPER */
+/* CORE */
+html,
+body {
+  background-color: #f8f8f8;
+}
+
 /* HEADINGS */
 h1,
 h2,
@@ -9670,7 +9676,7 @@ h1 {
   color: #434343;
   font-size: 70px;
   font-weight: 300;
-  max-width: 200px;
+  max-width: 100px;
   padding-bottom: 75px;
   border-bottom: 5px solid #67549a;
 }
@@ -9706,15 +9712,21 @@ h4 {
 /* TEXT */
 p,
 a,
-label {
+label,
+input {
   color: #434343;
   font-family: "Karla";
   font-size: 22px;
-  font-weight: 400px;
+  font-weight: 400;
   line-height: 30px;
 }
 
 /* COMMONS */
+input:focus,
+button:focus {
+  outline: none;
+}
+
 .content {
   display: flex;
   align-items: center;
@@ -9732,11 +9744,33 @@ label {
 }
 
 .white-button {
-  width: 185px;
+  width: 100%;
   height: 45px;
   border: 1px solid #67549a;
   background-color: white;
   border-radius: 24px;
+}
+.white-button:hover {
+  background-color: #67549a;
+  color: white;
+}
+
+.mc-field-group {
+  display: flex;
+  /*INPUT*/
+  /*BUTTON*/
+}
+.mc-field-group .email {
+  border-radius: 120px;
+  min-width: 400px;
+  background-color: white;
+  border: 1px solid #67549a;
+}
+.mc-field-group .button {
+  z-index: 1;
+  margin-left: -3rem;
+  border-radius: 120px;
+  border: 1px solid #67549a;
 }
 
 /* WELCOME */
@@ -9752,7 +9786,9 @@ label {
 #welcome .welcome-text p {
   padding-right: 50px;
   padding-top: 50px;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 700;
+  text-justify: auto;
 }
 
 /* MANIFESTO */
@@ -9760,9 +9796,25 @@ label {
   height: 100vh;
   display: flex;
   align-items: center;
+  /* DROPS */
+}
+#manifesto .drop-1 {
+  position: absolute;
+  left: 250px;
+  filter: opacity(0.5);
+}
+#manifesto .drop-2 {
+  position: absolute;
+  right: 150px;
+  filter: opacity(0.5);
 }
 #manifesto .manifesto-card {
-  display: inline-flex;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 3rem 5rem 3rem;
+  height: 300px;
+  background-color: white;
+  box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
 }
 
 /* DOING */
@@ -9770,6 +9822,16 @@ label {
   height: 100vh;
   display: flex;
   align-items: center;
+  /* DROPS */
+}
+#doing h2,
+#doing h3 {
+  z-index: 1;
+}
+#doing .drop-1 {
+  position: absolute;
+  right: 0px;
+  filter: opacity(0.3);
 }
 
 /* TEAM */
@@ -9778,8 +9840,26 @@ label {
   display: flex;
   align-items: center;
 }
+#team h2,
+#team h3,
+#team p {
+  z-index: 1;
+}
+#team .drop-1 {
+  position: absolute;
+  left: 100px;
+  filter: opacity(0.6);
+}
 #team .card {
   margin: 0 2vw;
+  box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
+}
+#team .card .card-body {
+  padding: 2rem;
+}
+#team .card .card-body button {
+  height: 32px;
+  font-size: 16px;
 }
 #team .img-card {
   max-height: 300px;
@@ -9791,9 +9871,32 @@ label {
   display: flex;
   align-items: center;
 }
+#news .card {
+  box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
+}
 #news .card:hover {
-  color: white;
+  transition: transform 0.075s;
+  transform: scale(1.03);
   background-image: linear-gradient(-237.25deg, #6853ac 0%, #1f9561 100%);
+}
+#news .card:hover * {
+  color: white;
+}
+#news .card:hover button {
+  color: #67549a;
+}
+#news .card:hover button:hover {
+  color: #fff;
+}
+#news .frame {
+  margin: 0 auto;
+  height: 300px;
+  width: 300px;
+  display: flex;
+}
+#news .img-card {
+  width: auto;
+  margin: auto;
 }
 
 /* HELP */
@@ -9801,10 +9904,23 @@ label {
   height: 100vh;
   display: flex;
   align-items: center;
+  /* DROPS */
+}
+#help .help-card {
+  background-color: white;
+  padding: 2rem 3rem 1rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
+}
+#help .drop-1 {
+  position: absolute;
+  left: 0px;
+  filter: opacity(0.4);
 }
 
 /* ECOSYSTEM */
 #ecosystem {
+  margin: 100px 0px;
   height: 50vh;
   display: flex;
   align-items: center;

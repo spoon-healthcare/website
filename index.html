@@ -7,6 +7,7 @@
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      description="Spoon Healthcare est une association qui a pour mission d'aider le domaine médical à se transformer numériquement."
 		/>
 
 		<link rel="stylesheet" href="style.css" />
@@ -31,7 +32,7 @@
 						<div class="content">
 							<div class="welcome-text">
 								<h1 class="heading-welcome">Spoon Healthcare</h1>
-								<p>
+								<p class="mt-3 pb-5">
 									La médecine mérite de meilleurs outils, de meilleures méthodes pour progresser.
                   <br>
                   Notre mission est de catalyser l'innovation dans le domaine médical.
@@ -44,10 +45,10 @@
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
                     novalidate>
                     <div id="mc_embed_signup_scroll">
+                      <label for="mce-EMAIL">Pour rester informé.e</label>
                       <div class="mc-field-group">
-                        <label for="mce-EMAIL">Pour rester informé.e</label>
-                        <br>
-                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                        <input type="email" value=""  name="EMAIL" class="form-check required email" id="mce-EMAIL">
+                        <input type="submit" value="Je m'informe" name="subscribe" id="mc-embedded-subscribe" class="button">                        
                       </div>
                       <div id="mce-responses" class="clear">
                         <div class="response" id="mce-error-response" style="display:none"></div>
@@ -59,7 +60,7 @@
                           <input type="text" name="b_0eaa101f158eec0f7d62372f6_536fab7d32" tabindex="-1" value="">
                         </div>
                         <div class="clear">
-                          <input type="submit" value="Je m'informe" name="subscribe" id="mc-embedded-subscribe" class="button">
+                          <!-- <input type="submit"  value="Je m'informe" name="subscribe" id="mc-embedded-subscribe" class="button"> -->
                         </div>
                       </div>
                     </div>
@@ -78,6 +79,7 @@
 		</section>
 		<section id="manifesto">
 			<div class="container">
+        <img src="assets/manifesto/manifesto-drop-1.png" alt="" class="drop-1">
 				<div class="row">
 					<h2 class="mx-auto">
 						Manifesto
@@ -91,37 +93,24 @@
 						en la santé pour tous, la technologie à notre service
 					</p>
 				</div>
+        <img src="assets/manifesto/manifesto-drop-2.png" alt="" class="drop-2">
 				<div class="row mt-5">
 					<div class="col">
             <div class="manifesto-card">
-              <div class="col-3">
-              <img src="https://fakeimg.pl/60x60/ff0000,128/000,255" />
-              </div>              
-              <p>
-                Nous avons connu la maladie
-                <br>
-                Nous avons accompagné des proches dans ces épreuves
-                <br>
-                Nous avons pleuré face à l'attente, l'incompréhension
-                <br>
-                Nous avons vu grandir en nous la colère
-              </p>
+							<div>
+								<p>Nous avons connu la maladie.</p>
+								<p>Nous avons accompagné des proches dans ces épreuves.</p>
+								<p>Nous avons pleuré face à l'attente, l'incompréhension.</p>
+								<p>Nous avons vu grandir en nous la colère.</p>
+							</div>              
             </div>
 					</div>
 					<div class="col">
             <div class="manifesto-card">
-              <div class="col-3">
-                <img src="https://fakeimg.pl/60x60/ff0000,128/000,255" />
-              </div>
-              <p>
-                La colère de traîner cet archaïsme 
-                <br>
-                Au nom de quoi ?
-                <br>
-                Nous n'avons ni le temps ni l'envie d'y répondre
-                <br>
-                Nous voulons continuer le combat, pour nous, pour les autres                
-              </p>
+              <p>La colère de traîner cet archaïsme.</p>
+							<p>Au nom de quoi ?</p>
+							<p>Nous n'avons ni le temps ni l'envie d'y répondre</p>
+							<p>Nous voulons continuer le combat, pour nous, pour les autres </p>
             </div>
 					</div>
 				</div>
@@ -129,6 +118,7 @@
 		</section>
 		<section id="doing">
 			<div class="container">
+        <img src="assets/doing/doing-drop-1.png" class="drop-1">
 				<div class="row">
 					<h2 class="mx-auto">Doing</h2>
 				</div>
@@ -170,7 +160,9 @@
 							<div class="card-body">
 								<h4 class="card-title">Shirley Jagle</h4>
 								<p class="">Admin</p>
-                <button class="white-button">Mail</button>
+								<a href="https://www.linkedin.com/in/shirleyjagle/" target="_blank">
+                	<button class="white-button">Voir son profil LinkedIn</button>
+								</a>
 							</div>
 						</div>
 						<div class="card">
@@ -178,11 +170,14 @@
 							<div class="card-body">
 								<h4 class="card-title">Vivian Sarazin</h4>
 								<p class="">Product</p>
-                <button class="white-button">Mail</button>
+								<a href="https://www.linkedin.com/in/viviansarazin/" target="_blank">
+                	<button class="white-button">Voir son profil LinkedIn</button>
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
+        <img src="assets/team/team-drop-1.png" class="drop-1">
 			</div>
 		</section>
 		<section id="news">
@@ -196,46 +191,52 @@
           </h3>
         </div>
         <div class="row">
-          <p class="mx-auto lead">
+          <p class="mx-auto lead ">
             sur plusieurs fronts
           </p>
         </div>
 				<div class="row">
-					<div class="card-deck">
+					<div class="card-deck mt-5">
             <div class="card">
-              <img src="assets/news/quand-le-numerique-rencontrera-le-cancer.jpeg" class="img-fluid img-card" alt="" />
+							<div class="frame">
+              	<img src="assets/news/quand-le-numerique-rencontrera-le-cancer.jpeg" class="img-fluid img-card" alt="" />
+							</div>
               <div class="card-body">
                 <h4 class="card-title">Quand le numérique rencontrera le cancer ?</h4>
-                <p class="card-text">Une bouteille à la mer</p>
+									<a href="https://medium.com/@VivianSolide/quand-le-numérique-rencontrera-le-cancer-529da730a11f" target="_blank">
+										<button class="white-button">Lire</button>
+									</a>
               </div>
             </div>
             <div class="card">
-              <img src="assets/news/soiree-onco.jpg" class="img-fluid img-card" alt="" />
-              <div class="card-body">
-                <h4 class="card-title">Soirée Onco</h4>
-                <p class="card-text">Text</p>
-              </div>
-            </div>
-            <div class="card">
+							<div class="frame">
               <img src="assets/news/creation-spoon-healthcare.png" class="img-fluid img-card" alt="" />
+							</div>
               <div class="card-body">
                 <h4 class="card-title">Création de l'association Spoon Healthcare</h4>
-                <p class="card-text">Text</p>
+									<a href="https://medium.com/@VivianSolide/création-de-lassociation-spoon-healthcare-1c99d5bba379" target="_blank">
+										<button class="white-button">Lire</button>
+									</a>
               </div>
             </div>
-            <div class="card">
-              <img src="assets/news/health-data-hub.jpeg" class="img-fluid img-card" alt="" />
+            <!-- <div class="card">
+							<div class="frame">							
+              	<img src="assets/news/health-data-hub.jpeg" class="img-fluid img-card" alt="" />
+							</div>
               <div class="card-body">
                 <h4 class="card-title">Dépôt candidature Health Data Hub</h4>
-                <p class="card-text">Text</p>
+									<a href="https://www.linkedin.com/in/viviansarazin/" target="_blank">
+										<button class="white-button">Lire</button>
+									</a>
               </div>
-            </div>
+            </div> -->
 					</div>
 				</div>
 			</div>
 		</section>
 		<section id="help">
 			<div class="container">
+        <img src="assets/help/help-drop-1.png" class="drop-1">
         <div class="row">
 					<h2 class="mx-auto">Help us</h2>
         </div>
@@ -251,16 +252,16 @@
         </div>
 				<div class="row mt-5">
 					<div class="col">
-						<img src="assets/help/helloasso.png" alt="" />
-            <p class="mt-5 pr-5">Grâce à notre partenaire HelloAsso, vous avez la possibilité de vous adhérer à Spoon Healthcare avec un montant libre.
-              <br>
-              Ce montant de votre choix vaudra valeur d'adhésion pour l'année en cours.
-              <br>
-              HelloAsso vous fournit par la suite les attestations nécessaires pour déduire une partie du montant de vos impôts.
-            </p>
-            <a href="https://www.helloasso.com/associations/spoon-healthcare" target="_blank"> 
-              <button class="white-button">En savoir plus</button>
-            </a>
+						<div class="help-card">
+							<img src="assets/help/helloasso.png" alt="" />
+							<p class="mt-5 pr-5">Grâce à notre partenaire HelloAsso, vous avez la possibilité de vous adhérer à Spoon Healthcare avec un montant libre.</p>
+							<p>Ce montant de votre choix vaudra valeur d'adhésion pour l'année en cours.</p>
+							<p>HelloAsso vous fournit par la suite les attestations nécessaires pour déduire une partie du montant de vos impôts.
+							<br>
+							<a href="https://www.helloasso.com/associations/spoon-healthcare" target="_blank"> 
+								<button class="white-button mt-5">En savoir plus</button>
+							</a>
+						</div>
           </div>
 					<div class="col">
             <iframe
@@ -271,7 +272,7 @@
 			</div>
 		</section>
 		<section id="ecosystem">
-			<div class="container">
+			<div class="container mt-5">
 				<div class="row">
 					<h2 class="mx-auto">Ecosystem</h2>
 				</div>
@@ -310,34 +311,37 @@
 				<div class="row">
 					<div class="col">
 						<h3>Spoon Healthcare</h3>
-						<p>88, rue Judaïque</p>
-						<p>33000 Bordeaux</p>
+						<p>88, rue Judaïque<br>33000 Bordeaux</p>
 					</div>
 					<div class="col">
 						<h3>Newsletter</h3>
             <!-- Begin Mailchimp Signup Form -->
             <div id="mc_embed_signup">
-              <form
-                action="https://spoon-healthcare.us20.list-manage.com/subscribe/post?u=0eaa101f158eec0f7d62372f6&amp;id=536fab7d32"
-                method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
-                novalidate>
-                <div id="mc_embed_signup_scroll">
-                  <div class="mc-field-group">
-                    <input type="email" value="" placeholder="Votre adresse mail" name="EMAIL" class="required email" id="mce-EMAIL">
-                  </div>
-                  <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none"></div>
-                    <div class="response" id="mce-success-response" style="display:none"></div>
-                  </div>
-                  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
-                    <input type="text" name="b_0eaa101f158eec0f7d62372f6_536fab7d32" tabindex="-1" value="">
-                  </div>
-                  <div class="clear">
-                    <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                  </div>
-                </div>
-              </form>
+							<form
+								action="https://spoon-healthcare.us20.list-manage.com/subscribe/post?u=0eaa101f158eec0f7d62372f6&amp;id=536fab7d32"
+								method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank"
+								novalidate>
+								<div id="mc_embed_signup_scroll">
+									<label for="mce-EMAIL">Pour rester informé.e</label>
+									<div class="mc-field-group">
+										<input type="email" value="" name="EMAIL" class="form-check required email" id="mce-EMAIL">
+										<input type="submit" value="Je m'informe" name="subscribe" id="mc-embedded-subscribe" class="button">
+									</div>
+									<div id="mce-responses" class="clear">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div>
+									<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div style="display: inline-flex">
+										<div style="position: absolute; left: -5000px;" aria-hidden="true">
+											<input type="text" name="b_0eaa101f158eec0f7d62372f6_536fab7d32" tabindex="-1" value="">
+										</div>
+										<div class="clear">
+											<!-- <input type="submit"  value="Je m'informe" name="subscribe" id="mc-embedded-subscribe" class="button"> -->
+										</div>
+									</div>
+								</div>
+							</form>
             </div>
             <!--End mc_embed_signup-->
 					</div>
