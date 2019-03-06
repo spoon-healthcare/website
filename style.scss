@@ -126,6 +126,12 @@ a {
 	height: 100vh;
 	display: flex;
 	align-items: center;
+	.card {
+		margin: 0 2vw;
+	}
+	.img-card {
+		max-height: 300px;
+	}
 }
 
 /* NEWS */
@@ -147,6 +153,13 @@ a {
 	height: 50vh;
 	display: flex;
 	align-items: center;
+	.eco-images {
+		display: flex;
+		justify-content: space-around;
+		.eco-img {
+			max-height: 200px;
+		}
+	}
 }
 
 /* FOOTER */

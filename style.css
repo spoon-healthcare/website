@@ -9716,6 +9716,12 @@ a {
   display: flex;
   align-items: center;
 }
+#team .card {
+  margin: 0 2vw;
+}
+#team .img-card {
+  max-height: 300px;
+}
 
 /* NEWS */
 #news {
@@ -9736,6 +9742,13 @@ a {
   height: 50vh;
   display: flex;
   align-items: center;
+}
+#ecosystem .eco-images {
+  display: flex;
+  justify-content: space-around;
+}
+#ecosystem .eco-images .eco-img {
+  max-height: 200px;
 }
 
 /* FOOTER */
