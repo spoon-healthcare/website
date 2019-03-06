@@ -72,7 +72,8 @@ $mauve: #67549a;
 /* HEADINGS */
 h1,
 h2,
-h3 {
+h3,
+h4 {
 	font-family: "Montserrat";
 }
 
@@ -141,6 +142,14 @@ label {
 	background-image: linear-gradient(-247.59deg, #6853ac 0%, #1f9561 100%);
 }
 
+.white-button {
+	width: 185px;
+	height: 45px;
+	border: 1px solid #67549a;
+	background-color: white;
+	border-radius: 24px;
+}
+
 /* WELCOME */
 #welcome {
 	.content {
@@ -189,13 +198,6 @@ label {
 	}
 	.img-card {
 		max-height: 300px;
-	}
-	.team-button {
-		width: 185px;
-		height: 45px;
-		border: 1px solid #67549a;
-		background-color: white;
-		border-radius: 24px;
 	}
 }
 
