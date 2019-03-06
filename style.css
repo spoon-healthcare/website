@@ -5,7 +5,7 @@
  * Copyright 2011-2019 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Karla|Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Karla:400,700|Montserrat:300,400,700");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9665,10 +9665,52 @@ h3 {
   font-family: "Montserrat";
 }
 
+h1 {
+  color: #434343;
+  font-size: 70px;
+  font-weight: 300;
+  max-width: 200px;
+  padding-bottom: 75px;
+  border-bottom: 5px solid #67549a;
+}
+
+h2 {
+  color: #67549a;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+
+h3 {
+  color: #434343;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 80px;
+}
+
+h4 {
+  color: #6853ac;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.incipit {
+  color: #434343;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
 /* TEXT */
 p,
-a {
+a,
+label {
+  color: #434343;
   font-family: "Karla";
+  font-size: 22px;
+  font-weight: 400px;
+  line-height: 30px;
 }
 
 /* COMMONS */
@@ -9682,6 +9724,12 @@ a {
   max-width: 50%;
 }
 
+.button {
+  color: white;
+  height: 50px;
+  background-image: linear-gradient(-247.59deg, #6853ac 0%, #1f9561 100%);
+}
+
 /* WELCOME */
 #welcome .content {
   height: 95vh;
@@ -9691,6 +9739,11 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#welcome .welcome-text p {
+  padding-right: 50px;
+  padding-top: 50px;
+  font-size: 18px;
 }
 
 /* MANIFESTO */
@@ -9722,12 +9775,23 @@ a {
 #team .img-card {
   max-height: 300px;
 }
+#team .team-button {
+  width: 185px;
+  height: 45px;
+  border: 1px solid #67549a;
+  background-color: white;
+  border-radius: 24px;
+}
 
 /* NEWS */
 #news {
   height: 100vh;
   display: flex;
   align-items: center;
+}
+#news .card:hover {
+  color: white;
+  background-image: linear-gradient(-237.25deg, #6853ac 0%, #1f9561 100%);
 }
 
 /* HELP */
