@@ -73,6 +73,7 @@ $mauve: #67549a;
 html,
 body {
 	background-color: #f8f8f8;
+	scroll-behavior: smooth;
 }
 
 /* HEADINGS */
@@ -124,7 +125,9 @@ h4 {
 p,
 a,
 label,
-input {
+input,
+ul,
+em {
 	color: $grey;
 	font-family: "Karla";
 	font-size: 22px;
@@ -167,6 +170,10 @@ button:focus {
 	}
 }
 
+.logo {
+	@extend .img-fluid;
+}
+
 .mc-field-group {
 	display: flex;
 
@@ -186,6 +193,21 @@ button:focus {
 	}
 }
 
+/* NAV */
+#nav {
+	.collapse,
+	.navbar-collapse {
+		justify-content: flex-end;
+	}
+	a {
+		margin-left: 12px;
+	}
+	.logo {
+		width: auto;
+		height: 80px;
+	}
+}
+
 /* WELCOME */
 #welcome {
 	.content {
@@ -196,6 +218,9 @@ button:focus {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+	}
+	.welcome-splash {
+		width: auto;
 	}
 
 	.welcome-text {
@@ -211,10 +236,10 @@ button:focus {
 
 /* MANIFESTO */
 #manifesto {
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	align-items: center;
-
+	margin-bottom: 5rem;
 	/* DROPS */
 	.drop-1 {
 		position: absolute;
@@ -229,8 +254,8 @@ button:focus {
 	.manifesto-card {
 		display: flex;
 		flex-direction: column;
-		padding: 2rem 3rem 5rem 3rem;
-		height: 300px;
+		padding: 2rem 3rem 2rem 3rem;
+		height: 100%;
 		background-color: white;
 		box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
 	}
@@ -238,13 +263,32 @@ button:focus {
 
 /* DOING */
 #doing {
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	align-items: center;
+	p {
+		font-size: 16px;
+		// line-height: 16px;
+	}
 	h2,
 	h3 {
 		z-index: 1;
 	}
+	.help-card {
+		background-color: white;
+		padding: 2rem 3rem 1rem 3rem;
+		border-radius: 12px;
+		box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
+	}
+
+	.float-right {
+		font-size: 14px;
+		a {
+			font-size: 14px;
+		}
+		text-align: right;
+	}
+
 	/* DROPS */
 	.drop-1 {
 		position: absolute;
@@ -255,13 +299,17 @@ button:focus {
 
 /* TEAM */
 #team {
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	h2,
 	h3,
 	p {
 		z-index: 1;
+	}
+
+	h4 {
+		font-size: 20px;
 	}
 
 	.drop-1 {
@@ -297,8 +345,8 @@ button:focus {
 			* {
 				color: white;
 			}
-			transition: transform 0.075s;
-			transform: scale(1.03);
+			transition: transform 0.03s;
+			transform: scale(1.01);
 			button {
 				color: $mauve;
 				&:hover {
@@ -363,4 +411,12 @@ button:focus {
 	height: 30vh;
 	display: flex;
 	align-items: center;
+	.end {
+		display: flex;
+		justify-content: space-between;
+		p,
+		a {
+			font-size: 10px;
+		}
+	}
 }

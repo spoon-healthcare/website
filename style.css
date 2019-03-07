@@ -471,7 +471,7 @@ mark,
   content: "— ";
 }
 
-.img-fluid {
+.img-fluid, .logo {
   max-width: 100%;
   height: auto;
 }
@@ -9662,6 +9662,7 @@ h3 {
 html,
 body {
   background-color: #f8f8f8;
+  scroll-behavior: smooth;
 }
 
 /* HEADINGS */
@@ -9713,7 +9714,9 @@ h4 {
 p,
 a,
 label,
-input {
+input,
+ul,
+em {
   color: #434343;
   font-family: "Karla";
   font-size: 22px;
@@ -9773,6 +9776,19 @@ button:focus {
   border: 1px solid #67549a;
 }
 
+/* NAV */
+#nav .collapse,
+#nav .navbar-collapse {
+  justify-content: flex-end;
+}
+#nav a {
+  margin-left: 12px;
+}
+#nav .logo {
+  width: auto;
+  height: 80px;
+}
+
 /* WELCOME */
 #welcome .content {
   height: 95vh;
@@ -9782,6 +9798,9 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+#welcome .welcome-splash {
+  width: auto;
 }
 #welcome .welcome-text p {
   padding-right: 50px;
@@ -9793,9 +9812,10 @@ button:focus {
 
 /* MANIFESTO */
 #manifesto {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
+  margin-bottom: 5rem;
   /* DROPS */
 }
 #manifesto .drop-1 {
@@ -9811,22 +9831,38 @@ button:focus {
 #manifesto .manifesto-card {
   display: flex;
   flex-direction: column;
-  padding: 2rem 3rem 5rem 3rem;
-  height: 300px;
+  padding: 2rem 3rem 2rem 3rem;
+  height: 100%;
   background-color: white;
   box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
 }
 
 /* DOING */
 #doing {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   /* DROPS */
 }
+#doing p {
+  font-size: 16px;
+}
 #doing h2,
 #doing h3 {
   z-index: 1;
+}
+#doing .help-card {
+  background-color: white;
+  padding: 2rem 3rem 1rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
+}
+#doing .float-right {
+  font-size: 14px;
+  text-align: right;
+}
+#doing .float-right a {
+  font-size: 14px;
 }
 #doing .drop-1 {
   position: absolute;
@@ -9836,7 +9872,7 @@ button:focus {
 
 /* TEAM */
 #team {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -9844,6 +9880,9 @@ button:focus {
 #team h3,
 #team p {
   z-index: 1;
+}
+#team h4 {
+  font-size: 20px;
 }
 #team .drop-1 {
   position: absolute;
@@ -9875,8 +9914,8 @@ button:focus {
   box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
 }
 #news .card:hover {
-  transition: transform 0.075s;
-  transform: scale(1.03);
+  transition: transform 0.03s;
+  transform: scale(1.01);
   background-image: linear-gradient(-237.25deg, #6853ac 0%, #1f9561 100%);
 }
 #news .card:hover * {
@@ -9938,6 +9977,14 @@ button:focus {
   height: 30vh;
   display: flex;
   align-items: center;
+}
+#footer .end {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .end p,
+#footer .end a {
+  font-size: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
