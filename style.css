@@ -9802,6 +9802,11 @@ button:focus {
 #welcome .welcome-splash {
   width: auto;
 }
+@media (max-width: 991.98px) {
+  #welcome .welcome-splash {
+    display: none;
+  }
+}
 #welcome .welcome-text p {
   padding-right: 50px;
   padding-top: 50px;
@@ -9857,6 +9862,11 @@ button:focus {
   border-radius: 12px;
   box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
 }
+@media (max-width: 991.98px) {
+  #doing .help-card {
+    margin-bottom: 3rem;
+  }
+}
 #doing .float-right {
   font-size: 14px;
   text-align: right;
@@ -9906,7 +9916,7 @@ button:focus {
 
 /* NEWS */
 #news {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -9937,10 +9947,13 @@ button:focus {
   width: auto;
   margin: auto;
 }
+#news .white-button {
+  padding: 0 5rem;
+}
 
 /* HELP */
 #help {
-  height: 100vh;
+  height: 100%;
   display: flex;
   align-items: center;
   /* DROPS */
@@ -9951,16 +9964,26 @@ button:focus {
   border-radius: 12px;
   box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
 }
+@media (max-width: 991.98px) {
+  #help .help-card {
+    margin-bottom: 3rem;
+  }
+}
 #help .drop-1 {
   position: absolute;
   left: 0px;
   filter: opacity(0.4);
 }
+@media (max-width: 991.98px) {
+  #help .drop-1 {
+    display: none;
+  }
+}
 
 /* ECOSYSTEM */
 #ecosystem {
   margin: 100px 0px;
-  height: 50vh;
+  height: 100%;
   display: flex;
   align-items: center;
 }
@@ -9974,7 +9997,7 @@ button:focus {
 
 /* FOOTER */
 #footer {
-  height: 30vh;
+  height: 100%;
   display: flex;
   align-items: center;
 }

@@ -221,6 +221,9 @@ button:focus {
 	}
 	.welcome-splash {
 		width: auto;
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
 	}
 
 	.welcome-text {
@@ -268,7 +271,6 @@ button:focus {
 	align-items: center;
 	p {
 		font-size: 16px;
-		// line-height: 16px;
 	}
 	h2,
 	h3 {
@@ -279,6 +281,9 @@ button:focus {
 		padding: 2rem 3rem 1rem 3rem;
 		border-radius: 12px;
 		box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
+		@include media-breakpoint-down(md) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	.float-right {
@@ -336,7 +341,7 @@ button:focus {
 
 /* NEWS */
 #news {
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	.card {
@@ -368,11 +373,15 @@ button:focus {
 		width: auto;
 		margin: auto;
 	}
+
+	.white-button {
+		padding: 0 5rem;
+	}
 }
 
 /* HELP */
 #help {
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	align-items: center;
 
@@ -381,6 +390,9 @@ button:focus {
 		padding: 2rem 3rem 1rem 3rem;
 		border-radius: 12px;
 		box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
+		@include media-breakpoint-down(md) {
+			margin-bottom: 3rem;
+		}
 	}
 
 	/* DROPS */
@@ -388,13 +400,16 @@ button:focus {
 		position: absolute;
 		left: 0px;
 		filter: opacity(0.4);
+		@include media-breakpoint-down(md) {
+			display: none;
+		}
 	}
 }
 
 /* ECOSYSTEM */
 #ecosystem {
 	margin: 100px 0px;
-	height: 50vh;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	.eco-images {
@@ -408,7 +423,7 @@ button:focus {
 
 /* FOOTER */
 #footer {
-	height: 30vh;
+	height: 100%;
 	display: flex;
 	align-items: center;
 	.end {
