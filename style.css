@@ -9688,6 +9688,7 @@ h2 {
   font-weight: 700;
   line-height: 80px;
   text-transform: uppercase;
+  margin-top: 5rem;
 }
 
 h3 {
@@ -9982,7 +9983,6 @@ button:focus {
 
 /* ECOSYSTEM */
 #ecosystem {
-  margin: 100px 0px;
   height: 100%;
   display: flex;
   align-items: center;
@@ -10007,7 +10007,7 @@ button:focus {
 }
 #footer .end p,
 #footer .end a {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 /*# sourceMappingURL=style.css.map */
