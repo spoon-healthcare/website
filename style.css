@@ -9681,6 +9681,12 @@ h1 {
   padding-bottom: 75px;
   border-bottom: 5px solid #67549a;
 }
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 36px;
+    padding-bottom: 25px;
+  }
+}
 
 h2 {
   color: #67549a;
@@ -9693,9 +9699,10 @@ h2 {
 
 h3 {
   color: #434343;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 400;
   line-height: 80px;
+  text-align: center;
 }
 
 h4 {
@@ -9709,6 +9716,8 @@ h4 {
   font-size: 18px;
   font-weight: 400;
   line-height: 28px;
+  padding: 0px 15px;
+  text-align: center;
 }
 
 /* TEXT */
@@ -9726,6 +9735,12 @@ em {
 }
 
 /* COMMONS */
+@media (max-width: 767.98px) {
+  .navbar {
+    flex-wrap: nowrap;
+  }
+}
+
 input:focus,
 button:focus {
   outline: none;
@@ -9766,9 +9781,19 @@ button:focus {
 }
 .mc-field-group .email {
   border-radius: 120px;
-  min-width: 400px;
   background-color: white;
   border: 1px solid #67549a;
+}
+@media (min-width: 768px) {
+  .mc-field-group .email {
+    min-width: 400px;
+  }
+}
+@media (max-width: 991.98px) {
+  .mc-field-group .email {
+    font-size: 16px;
+    width: 100%;
+  }
 }
 .mc-field-group .button {
   z-index: 1;
@@ -9788,6 +9813,12 @@ button:focus {
 #nav .logo {
   width: auto;
   height: 80px;
+}
+@media (max-width: 767.98px) {
+  #nav img {
+    margin-left: -30px;
+    max-width: 80%;
+  }
 }
 
 /* WELCOME */
@@ -9815,6 +9846,12 @@ button:focus {
   font-weight: 700;
   text-justify: auto;
 }
+@media (max-width: 767.98px) {
+  #welcome .welcome-text p {
+    padding-right: 0px;
+    padding-top: 0px;
+  }
+}
 
 /* MANIFESTO */
 #manifesto {
@@ -9828,6 +9865,11 @@ button:focus {
   position: absolute;
   left: 250px;
   filter: opacity(0.5);
+}
+@media (max-width: 991.98px) {
+  #manifesto .drop-1 {
+    display: none;
+  }
 }
 #manifesto .drop-2 {
   position: absolute;
@@ -9850,12 +9892,14 @@ button:focus {
   align-items: center;
   /* DROPS */
 }
-#doing p {
+#doing p,
+#doing li {
   font-size: 16px;
 }
 #doing h2,
 #doing h3 {
   z-index: 1;
+  margin-top: 12px;
 }
 #doing .help-card {
   background-color: white;
@@ -9901,7 +9945,7 @@ button:focus {
   filter: opacity(0.6);
 }
 #team .card {
-  margin: 0 2vw;
+  margin: 1vw 2vw;
   box-shadow: 0 40px 46px rgba(31, 149, 97, 0.1);
 }
 #team .card .card-body {
@@ -9993,6 +10037,7 @@ button:focus {
 }
 #ecosystem .eco-images .eco-img {
   max-height: 200px;
+  margin: 1rem;
 }
 
 /* FOOTER */
@@ -10008,6 +10053,9 @@ button:focus {
 #footer .end p,
 #footer .end a {
   font-size: 12px;
+}
+#footer h3 {
+  text-align: left;
 }
 
 /*# sourceMappingURL=style.css.map */
