@@ -2,32 +2,12 @@
 
 ## Website
 
-Site web de l'association Spoon Healthcare
+Site web de l'association Spoon Healthcare : http://www.spoon-healthcare.org
 
 ### Modus operandi
 
 #### Compiler le css
 
-\$ npm i
+```$ npm i```
 
-\$ sass style.scss style.css --watch
-
-#### Intégration
-
-Vous trouverez la maquette à la racine
-
-Tous les assets sont exportés (.svg & .png)
-
-Merci de les renommer "proprement"
-
-Si vous n'avez pas la suite Adobe, utilisez photopea.com pour récupérer les assets
-
-#### Collaboration
-
-Créer une branche
-
-Choisir une section par branche
-
-Nomenclature : {{prénom+nom}} - {{section}}
-
-Effectuer une merge request
+```$ sass style.scss style.css --watch```
